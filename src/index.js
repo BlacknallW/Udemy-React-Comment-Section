@@ -1,57 +1,17 @@
 //Import the React and ReactDOM libraries
 import React from "react";
 import ReactDOM from "react-dom";
-import Faker from 'faker';
+import CommentDetail from "./CommentDetail"
 
 // Create a react component
 const App = function () {
     return (
         <div className="ui container comments">
-            <div className="comment">
-                <a href="/" className="avatar">
-                    <img alt="avatar" src={Faker.image.avatar()} />
-                </a>
-                <div className="content">
-                    <a href="/" className="author">
-                        Sam
-                    </a>
-                    <div className="metadata">
-                        <span className="date">Today at 6:00PM</span>
-                    </div>
-                    <div className="text">Nice blog post!</div>
-                </div>
-            </div>
-            <div className="comment">
-                <a href="/" className="avatar">
-                    <img alt="avatar" src={Faker.image.avatar()} />
-                </a>
-                <div className="content">
-                    <a href="/" className="author">
-                        Sam
-                    </a>
-                    <div className="metadata">
-                        <span className="date">Today at 6:00PM</span>
-                    </div>
-                    <div className="text">Nice blog post!</div>
-                </div>
-            </div>
-            <div className="comment">
-                <a href="/" className="avatar">
-                    <img alt="avatar" src={Faker.image.avatar()} />
-                </a>
-                <div className="content">
-                    <a href="/" className="author">
-                        Sam
-                    </a>
-                    <div className="metadata">
-                        <span className="date">Today at 6:00PM</span>
-                    </div>
-                    <div className="text">Nice blog post!</div>
-                </div>
-            </div>
+            <CommentDetail author="Sam" />
+            <CommentDetail author="Alex" />
+            <CommentDetail author="Jane"/>
         </div>
-    )
-};
+)};
 
 
 //Take the react component and show it on the screen
